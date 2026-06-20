@@ -1,0 +1,50 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "agent": {
+    "default_model": {
+      "provider": "ollama",
+      "model": "gemma4:31b",
+      "enable_thinking": true,
+    },
+    "favorite_models": [],
+    "model_parameters": [],
+  },
+  "cli_default_open_behavior": "new_window",
+  "session": {
+    "trust_all_worktrees": true,
+  },
+  "icon_theme": {
+    "mode": "dark",
+    "light": "Zed (Default)",
+    "dark": "Zed (Default)",
+  },
+  "ui_font_size": 16,
+  "buffer_font_size": 15,
+  "theme": {
+    "mode": "dark",
+    "light": "One Light",
+    "dark": "Catppuccin Mocha",
+  },
+  "vim_mode": true,
+  "languages": {
+    "Markdown": {
+      "soft_wrap": "editor_width",
+      "preferred_line_length": 80,
+      "remove_trailing_whitespace_on_save": false, // Disable trimming trailing whitespace on save to preserve Markdown line breaks.
+    },
+  },
+  "lsp": {
+    "markdown-oxide": {
+      "initialization_options": {
+        "vault_path": "~/vault",
+      },
+    },
+  },
+}
