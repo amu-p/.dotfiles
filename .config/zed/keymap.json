@@ -15,7 +15,8 @@
   {
     "context": "Editor && vim_mode == insert",
     "bindings": {
-      "j k": ["workspace::SendKeystrokes", "escape : w enter"],
+      "j j":    ["workspace::SendKeystrokes", "escape : w enter"],
+      "ctrl-s": ["workspace::SendKeystrokes", "escape : w enter"],
 
       "ctrl-h": "vim::Left",
       "ctrl-j": "vim::Down",
@@ -27,6 +28,18 @@
     "context": "vim_mode == normal || vim_mode == visual",
     "bindings": {
       "g w": "vim::HelixJumpToWord",
+      "j": ["vim::Down", { "display_lines": true }],
+      "k": ["vim::Up", { "display_lines": true }],
+      "g j": ["vim::Down", { "display_lines": false }],
+      "g k": ["vim::Up", { "display_lines": false }]
+    },
+  },
+  {
+    "context": "vim_mode == normal",
+    "bindings": {
+      "ctrl-s": ["workspace::SendKeystrokes", ": w enter"],
+      "shift-h": ["workspace::SendKeystrokes", ": tabprev enter"],
+      "shift-l": ["workspace::SendKeystrokes", ": tabnext enter"],
     },
   },
   {

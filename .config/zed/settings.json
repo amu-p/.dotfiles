@@ -32,11 +32,17 @@
     "light": "One Light",
     "dark": "Catppuccin Mocha",
   },
+  "format_on_save": "off",
   "vim_mode": true,
+  "vim": {
+    "toggle_relative_line_numbers": true,
+  },
+  "soft_wrap": "bounded",
+  "preferred_line_length": 120,
   "languages": {
     "Markdown": {
-      "soft_wrap": "editor_width",
-      "preferred_line_length": 80,
+      "soft_wrap": "bounded",
+      "preferred_line_length": 120,
       "remove_trailing_whitespace_on_save": false, // Disable trimming trailing whitespace on save to preserve Markdown line breaks.
     },
   },
